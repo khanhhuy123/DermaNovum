@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header"> 
+        <img src="img/Logo.png" id="logo" alt="logo">
+    </div>
+    <div class="dropMenu">
+        <div class="ansiktkroppBtn" onmouseover="RotateArrow('arrowDown1', 'ansiktkroppBtn')" onmouseout="RotateBackArrow('arrowDown1', 'ansiktkroppBtn')">Ansikte & Kropp 
+            <div class="arrowDown1"></div>
+        </div>
+        <div class="ansiktekroppContent" onmouseover="RotateArrow('arrowDown1', 'ansiktkroppBtn')" onmouseout="RotateBackArrow('arrowDown1', 'ansiktkroppBtn')">
+            <div class="ansikteDiv">
+                <h1 class="ansikteDiv_title">Ansikte</h1>
+                <div class="ansikteDiv_line"></div>
+                <a class="ansikteDiv_links" href="#">Fire & Ice Behandling</a>
+                <a class="ansikteDiv_links" href="#">Bryn och Fransar</a>
+                <a class="ansikteDiv_links" href="#">Klassisk ansiktsbehandling</a>
+                <a class="ansikteDiv_links" href="#">Lyx</a>
+                <a class="ansikteDiv_links" href="#">Lätt ansiktsbehandling</a>
+                <a class="ansikteDiv_links" href="#">Minirelax</a>
+                <a class="ansikteDiv_links" href="#">Enzymbehandling</a>
+                <a class="ansikteDiv_links" href="#">Hudslipning - MicroDermabrasion</a>
+                <a class="ansikteDiv_links" href="#">Micropen</a>
+            </div>
+            <div class="kroppDiv">
+                <h1 class="kroppDiv_title">Kropp</h1>
+                <div class="kroppDiv_line"></div>
+                <a class="kroppDiv_links" href="#">Avslappnande Massage</a>
+                <a class="kroppDiv_links" href="#">HotStone Massage</a>
+                <a class="kroppDiv_links" href="#">Kroppspeeling</a>
+                <a class="kroppDiv_links" href="#">Laser</a>
+                <a class="kroppDiv_links" href="#">Vaxning</a>
+                <a class="kroppDiv_links" href="#">Epilering</a>
+                <a class="kroppDiv_links" href="#">AlkalineWash</a>
+                <a class="kroppDiv_links" href="#">Regndroppsterapi</a>
+            </div>
+            <div class="ansiktekroppDiv">
+                <h1 class="ansiktekroppDiv_title">Ansikte & Kropp</h1>
+                <div class="ansiktekroppDiv_line"></div>
+                <a class="ansiktekroppDiv_links" href="#">Harmoni</a>
+                <a class="ansiktekroppDiv_links" href="#">Lerinpackning</a>
+                <a class="ansiktekroppDiv_links" href="#">Max Relax</a>
+                <a class="ansiktekroppDiv_links" href="#">Sjunde Himlen</a>
+                <a class="ansiktekroppDiv_links" href="#">Guldkantpatillvaro</a>
+            </div>
+        </div>
+
+
+        <div class="handerfotterBtn" onmouseover="RotateArrow('arrowDown2', 'handerfotterBtn')" onmouseout="RotateBackArrow('arrowDown2','handerfotterBtn')">Händer & Fötter
+            <div class="arrowDown2"></div>
+        </div>
+        <div class="handerfotterContent" onmouseover="RotateArrow('arrowDown2', 'handerfotterBtn')" onmouseout="RotateBackArrow('arrowDown2','handerfotterBtn')">
+            <div class="handerfotterDiv">
+                <h1 class="handerfotterDiv_title">Händer & Fötter</h1>
+                <div class="handerfotterDiv_line"></div>
+                <a class="handerfotterDiv_links" href="#">Manikyr</a>
+                <a class="handerfotterDiv_links" href="#">Parrafinbad</a>
+                <a class="handerfotterDiv_links" href="#">Pedikyr</a>
+                <div class="footErbjudande_div">
+                    <img src="img/footErbjudande.jpg" id="footErbjudande_img">
+                    <div class="erbjudande">Erbjudande</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ovrigabehandlingarBtn" onmouseover="RotateArrow('arrowDown3','ovrigabehandlingarBtn' )" onmouseout="RotateBackArrow('arrowDown3', 'ovrigabehandlingarBtn')">Övriga Behandlingar
+            <div class="arrowDown3"></div>
+        </div>
+        <div class="ovrigabehandlingarContent" onmouseover="RotateArrow('arrowDown3','ovrigabehandlingarBtn' )" onmouseout="RotateBackArrow('arrowDown3', 'ovrigabehandlingarBtn')">
+            <div class="ovrigabehandlingarDiv">
+                <h1 class="ovrigabehandlingarDiv_title">Övriga Behandlingar</h1>
+                <div class="ovrigabehandlingarDiv_line"></div>
+                <a class="ovrigabehandlingarDiv_links" href="#">Biotronljusterapi</a>
+                <a class="ovrigabehandlingarDiv_links" href="#">Biotronterapi</a>
+                <a class="ovrigabehandlingarDiv_links" href="#">Lymfdranage</a>
+                <a class="ovrigabehandlingarDiv_links" href="#">Ögonbehandlingar</a>
+                <a class="ovrigabehandlingarDiv_links" href="#">Bach-Blomsterterapi</a>
+                <div class="blommaErbjudande_div">  
+                    <img src="img/blommaErbjudande.png" id="blommaErbjudande_img">
+                    <div class="erbjudande">Erbjudande</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="prislistaBtn">Prislista</div>
+        
+        <div class="omossBtn">Om Oss</div>
+    </div>
+    <img src="img/miljomysig3.jpg" id="miljomysig" alt="miljomysig">
+
+    <div class="exampleText1">
+        <h1 id="header1">Article Title</h1>
+        <p id="middleText1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p id="lastText1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+    </div>
+    
+    <div class="adContainer"> 
+        <div class="stoneImgDiv"> 
+            <img src="img/Stone.jpg" id="StoneImg" alt="Stone">
+        </div>
+        <div class="adLeftImgDiv" onmouseover="MouseOverTextDiv('adLeftImg', 'adLeftTextDiv')" onmouseout="MouseOutTextDiv('adLeftImg')"> 
+            <div class="adLeftTextDiv"> 
+                <h1 id="adLeftHeader">Release Peeling</h1>
+                <p1 id="adLeftText">vägen till en hårfri, slät, vacker hud</p1>
+                <p1 id="adLeftText2"><br><br>En basisk peeling som effektivt tar bort fjuniga hårstrån och döda hudceller. För dig som lider av oönskad hårväxt och kan inte använda andra metoder som laser eller epilering pga hårets kvalite och/eller färg.</p1>
+                <p1 id="adLeftText"><br><br><br><br>Pris efter behandlingsområdets storlek, boka tid för konsultation!</p1>
+            </div>
+            <img src="img/adL.jpg" id="adLeftImg" alt="adLeft">
+        </div>
+        <div class="adRightImgDiv" onmouseover="MouseOverTextDiv('adRightImg', 'adRightTextDiv')" onmouseout="MouseOutTextDiv('adRightImg')"> 
+            <div class="adRightTextDiv"> 
+                <h1 id="adRightHeader">Esse - Festive Pack</h1>
+                <p1 id="adRightText"><br>Body Cleanser som milt rengör, exfolierar och detoxar 2 st Sheetmasker som lugnar, reparerar, återfuktar huden</p1>
+                <p1 id="adRightText2"><br><br><br><br><br><br><br>Endast 395,- (värde 790,-) begränsat antal</p1>
+            </div>
+            <img src="img/adR.jpeg" id="adRightImg" alt="adRight">
+        </div>
+    </div>
+
+    <footer>
+        <div class="kontakt">
+            <div class="kontaktText">
+                <h1>Kontakta oss</h1>
+                <p1 id="footerTextDeco"><br>Mail</p1>
+                <p1><br>beatrix@dermanovum.se</p1>
+                <p1 id="footerTextDeco"><br><br>Telefon</p1>
+                <p1><br>042 - 16 16 85</p1>
+            </div>
+        </div>
+        <div class="oppettider">
+            <div class="oppettiderText">
+                <h1>Öppettider</h1>
+                <p1 id="footerTextDeco"><br>Öppettider vardagar</p1>
+                <p1><br>10.00-18.00<br>Lördagar och övriga tider enligt överenskommelse</p1>
+                <p1 id="footerTextDeco"><br><br>Adress</p1>
+                <p1><br>Kopparmöllegatan 20</p1>
+                <a id="mapLink" href="https://www.eniro.se/dermanovum+hud+%26+kroppsvård+helsingborg/4903378/firma" target="_blank"><br>Se karta</a>
+            </div>
+        </div>
+        <div class="socialMedia">
+            <div class="socialMediaText">
+                <h1>Följ oss</h1>
+                <br>    
+                <img src="img/facebook.png" id="facebookIcon" alt="facebook">
+                <img src="img/instagram.png" id="instagramIcon" alt="instagram">
+            </div>
+        </div>
+      </footer>
+    
+</body>
+</html>

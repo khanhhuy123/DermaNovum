@@ -1,0 +1,354 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Mono', 'Montserrat';
+    overflow-x: hidden;
+}
+
+.header{
+    height: 118px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+h1{
+    margin: 0px;
+}
+
+#logo{
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+.dropMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Dropmenu*/
+.ansiktkroppBtn, .handerfotterBtn, .ovrigabehandlingarBtn, .prislistaBtn, .omossBtn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    padding: 20px 40px 30px;
+    transition: 0.1s;
+}
+
+.ansiktkroppBtn:hover, .handerfotterBtn:hover, .ovrigabehandlingarBtn:hover, .prislistaBtn:hover, .omossBtn:hover{
+    cursor: pointer;
+    color: #6FCF97;
+}
+
+.prislistaBtn:hover, .omossBtn:hover{
+    text-decoration-line: underline; 
+}
+
+.prislistaBtn:hover, .omossBtn:hover{
+    cursor: pointer;
+}
+
+.arrowDown1, .arrowDown2, .arrowDown3{
+    height: 8px;
+    width: 8px;
+    margin-left: 10px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transform: rotate(-45deg);
+    transition: 0.6s;
+}
+
+
+.ansiktekroppContent, .handerfotterContent, .ovrigabehandlingarContent {
+    display: none;
+    margin-top: 4%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  
+    height: 470px;
+    width: 999px;
+    background-color: white;
+    border: #000 1px solid;
+    border-radius: 15px;    
+    box-shadow: 4px 5px 2px 1px rgba(0,0,0,0.4);
+}
+
+.handerfotterContent, .ovrigabehandlingarContent{
+    height: 350px;
+}
+
+
+.ansiktkroppBtn:hover + .ansiktekroppContent, .handerfotterBtn:hover + .handerfotterContent,
+.ovrigabehandlingarBtn:hover + .ovrigabehandlingarContent {
+    display: block;
+}
+
+.ansiktekroppContent:hover, .handerfotterContent:hover, .ovrigabehandlingarContent:hover{
+    display: block;
+}
+
+
+#miljomysig{
+    margin-top: 20px;
+    height: 334px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Dropmenu content*/
+.ansikteDiv, .kroppDiv, .ansiktekroppDiv{
+    float: left;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.handerfotterDiv, .ovrigabehandlingarDiv{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 280px;
+    padding-left: 3%;
+}
+
+/* Dropmenu Title*/
+.ansikteDiv_title, .kroppDiv_title, .ansiktekroppDiv_title, .handerfotterDiv_title, .ovrigabehandlingarDiv_title{
+    color: #687371;
+    font-size: 24px;
+    width: 280px;
+    padding-bottom: 5px;
+    margin: 30px 0px 0px;
+
+}
+.ansikteDiv_title, .kroppDiv_title, .ansiktekroppDiv_title{
+    transform: translateX(11%);
+}
+
+.handerfotterDiv_title{
+    transform: translateX(1%);
+}
+
+.ansikteDiv_line, .kroppDiv_line, .ansiktekroppDiv_line, .handerfotterDiv_line, .ovrigabehandlingarDiv_line{
+    height: 1px;
+    width: 280px;
+    margin: 0px auto 0px;
+    background-color: #969696;
+}
+
+/*DropNav Links*/
+.ansikteDiv_links, .kroppDiv_links, .ansiktekroppDiv_links{
+    margin-top: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    padding-left: 10%;
+}
+
+.handerfotterDiv_links, .ovrigabehandlingarDiv_links{
+    margin-top: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    padding-left: 3%;
+}
+
+.ansikteDiv_links:hover, .kroppDiv_links:hover, .ansiktekroppDiv_links:hover, .handerfotterDiv_links:hover, .ovrigabehandlingarDiv_links:hover{
+    color: #6FCF97;
+} 
+
+.erbjudande{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold   ;
+}
+
+.footErbjudande_div, .blommaErbjudande_div{
+    border-radius: 5px;
+    height: 200px;
+    width: 600px;
+    transform: translate(56%, -28%);
+    transition: 0.5s;   
+}
+.blommaErbjudande_div{
+    transform: translate(56%, -65%);
+}
+
+#footErbjudande_img, #blommaErbjudande_img{
+    border-radius: 5px;
+}
+.blommaErbjudande_div:hover, .footErbjudande_div:hover{
+    cursor: pointer;
+    filter: grayscale(40%);
+}
+
+.exampleText1{
+    text-align: center;
+    width: 798px;
+    margin: 0px auto 0px;
+}
+
+#header1{
+    margin: 40px auto 0px;
+    font-size: 40px;
+    color: #8A8A8A;
+    font-weight: bold;
+}
+
+#middleText1{
+    width: 635px;
+    margin: 30px auto 40px;
+    font-size: 20px;
+    color: #979797;
+}
+
+#lastText1{
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+/* Ad/Reklam */
+.adContainer {
+    display: grid;
+    height: auto;
+    width: 100vw;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 200px;
+}
+
+.stoneImgDiv { 
+    height: 100%;
+    width: 100vw;
+    grid-area: 1 / 1 / 7 / 8; 
+}
+.adLeftImgDiv { 
+    height: 100%;
+    width: 100%;
+    grid-area: 2 / 2 / 6 / 4; 
+}
+.adRightImgDiv { 
+    grid-area: 2 / 5 / 6 / 7; 
+}
+
+#StoneImg{
+    height: 730px;
+    width: 100vw;
+}
+
+#adLeftImg{
+    object-fit: cover;
+    width: 444px;
+    height: 520px;  
+    filter: brightness(50%);
+    border-radius: 15px;
+    transition: 0.6s;
+}
+
+.adLeftTextDiv{
+    position: absolute;
+    z-index: 1;
+    color: #6FCF97;
+    width: 400px;
+    transform: translate(5%, 15%);
+}
+#adLeftHeader{
+    font-size: 40px;
+}
+#adLeftText{
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+#adLeftText2{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#adRightImg{
+    object-fit: cover;
+    width: 444px;
+    height: 520px;
+    filter: brightness(50%);
+    border-radius: 15px;
+    transition: 0.6s;
+} 
+.adRightTextDiv{
+    position: absolute;
+    z-index: 1;
+    color: #6FCF97;
+    width: 400px;
+    transform: translate(5%, 15%);
+}
+#adRightHeader{
+    font-size: 40px;
+}
+#adRightText{
+    color: #ffffff;
+    font-size: 20px;
+}
+#adRightText2{
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    margin-top: 150px;
+    height: 300px;
+    background-color: #687371;
+    color: white;
+    justify-content: space-evenly;
+}
+
+
+.kontaktText, .oppettiderText, .socialMediaText{
+    transform: translateY(40px);
+}
+
+#mapLink{
+    color: #6FCF97;
+}
+#mapLink:hover{
+    color: #000;
+}
+
+#facebookIcon, #instagramIcon{
+    height: 50px;
+    width: 50px;
+}
+#facebookIcon{
+    transform: translateX(10px);
+    transition: 0.2s;
+}
+#instagramIcon{
+    transform: translateX(35px);
+    transition: 0.2s;
+}
+
+#footerTextDeco{
+    text-decoration: underline;
+}
+
+#facebookIcon:hover{
+    cursor: pointer;
+    filter: brightness(70%);
+}
+#instagramIcon:hover{
+    cursor: pointer;
+    filter: brightness(70%);
+}
+
+@media screen and (max-width: 600px) {
+    
+}
