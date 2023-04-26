@@ -1,6 +1,13 @@
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
 body{
     margin: 0px;
-    padding: 0px;
+    height: 100%;
+    width: 100vw;
+    padding: 0;
     font-family: 'Roboto Mono', 'Montserrat';
     overflow-x: hidden;
 }
@@ -32,8 +39,7 @@ h1{
     align-items: center;
     font-size: 16px;
     font-weight: 400;
-    border: none;
-    padding: 20px 40px 30px;
+    padding: 20px 40px 40px;
     transition: 0.1s;
 }
 
@@ -63,10 +69,10 @@ h1{
 
 .ansiktekroppContent, .handerfotterContent, .ovrigabehandlingarContent {
     display: none;
-    margin-top: 4%;
+    margin-top: 3%;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);  
+    transform: translate(-50%, 15px);  
     height: 470px;
     width: 999px;
     background-color: white;
@@ -83,6 +89,8 @@ h1{
 .ansiktkroppBtn:hover + .ansiktekroppContent, .handerfotterBtn:hover + .handerfotterContent,
 .ovrigabehandlingarBtn:hover + .ovrigabehandlingarContent {
     display: block;
+    position: absolute;
+    z-index: 5;
 }
 
 .ansiktekroppContent:hover, .handerfotterContent:hover, .ovrigabehandlingarContent:hover{
@@ -190,7 +198,7 @@ h1{
 
 .exampleText1{
     text-align: center;
-    width: 798px;
+    width: 100%;
     margin: 0px auto 0px;
 }
 
@@ -202,7 +210,6 @@ h1{
 }
 
 #middleText1{
-    width: 635px;
     margin: 30px auto 40px;
     font-size: 20px;
     color: #979797;
@@ -214,51 +221,41 @@ h1{
 }
 
 /* Ad/Reklam */
-.adContainer {
-    display: grid;
-    height: auto;
+.adContainer{
+    display: flex;
+    min-height: 730px;
     width: 100vw;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-top: 200px;
+    margin-top: 200px;  
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-image: url(/img/Stone.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-.stoneImgDiv { 
-    height: 100%;
-    width: 100vw;
-    grid-area: 1 / 1 / 7 / 8; 
+.LeftAdDiv{
+    width: 444px;
+    height: 520px;
 }
-.adLeftImgDiv { 
-    height: 100%;
-    width: 100%;
-    grid-area: 2 / 2 / 6 / 4; 
-}
-.adRightImgDiv { 
-    grid-area: 2 / 5 / 6 / 7; 
-}
-
-#StoneImg{
-    height: 730px;
-    width: 100vw;
-}
-
-#adLeftImg{
-    object-fit: cover;
+.RightAdDiv{
     width: 444px;
     height: 520px;  
+}
+#adLeftImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     filter: brightness(50%);
     border-radius: 15px;
     transition: 0.6s;
 }
-
 .adLeftTextDiv{
     position: absolute;
     z-index: 1;
     color: #6FCF97;
     width: 400px;
-    transform: translate(5%, 15%);
+    transform: translate(5%, -115%);
 }
 #adLeftHeader{
     font-size: 40px;
@@ -272,21 +269,20 @@ h1{
     color: #ffffff;
     font-size: 20px;
 }
-
 #adRightImg{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    width: 444px;
-    height: 520px;
     filter: brightness(50%);
     border-radius: 15px;
     transition: 0.6s;
-} 
+}
 .adRightTextDiv{
     position: absolute;
     z-index: 1;
     color: #6FCF97;
     width: 400px;
-    transform: translate(5%, 15%);
+    transform: translate(5%, -120%);
 }
 #adRightHeader{
     font-size: 40px;
@@ -348,7 +344,116 @@ footer {
     cursor: pointer;
     filter: brightness(70%);
 }
+@media screen and (min-width: 1200px){
+    #menu, .mobileLinks, .mobileLinks > a, .rightArrow, .leftFooter-Mobile, .rightFooter-Mobile{
+        display: none;
+    }
+}
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 1200px){
+    .header{
+        border-bottom: none;
+    }
+    #menu{
+        display: block;
+        height: 50px;
+        width: 50px;
+        transform: translate(50%, -160%);
+        transition: 0.2s;
+    }
+    .mobileLinks{
+        display: none;
+        height: 500px;
+        width: 90vw;
+        border: 1px solid #000;
+        z-index: 1;
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 15px;
+        transform: translateX(5%);
+    }
+    .mobileLinks > a{
+        display: block;
+        text-decoration: none;
+        padding-top: 28.3px;
+        padding-bottom: 28.3px;
+        padding-left: 2%;
+        font-size: 20px;
+        color: #000;
+        border-bottom: 1px solid #000;
+    }
+    .mobileLinks > a:last-child{
+        border-bottom: none;
+    }
+    #menu:hover{
+        cursor: pointer;
+        filter: opacity(70%);
+    }
+    .rightArrow{
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg); 
+        float: right;
+        margin-right: 40px;
+        margin-top: 11px;
+    }
+    .dropMenu, .kontakt, .oppettider, .socialMedia{
+        display: none;
+    }
+    .adContainer{
+        background-image: none;
+        flex-direction: column;
+        margin-top: 100px;
+        min-width: 100vw;
+    }
+    #adRightImg{
+        margin-top: 100px;
+    }
+    .leftFooter-Mobile, .rightFooter-Mobile{
+        width: 50%;
+        margin: 10px;
+        margin-left: 10px;
+    }
+    /* .rightFooter-Mobile{
+        width: 50%;
+        margin-top: 10px;
+    } */
+    .leftFooter-Mobile > h1, .rightFooter-Mobile > h1{
+        font-size: 25px;
+    }
+
+}
+
+
+@media screen and (max-width: 810px){ 
+    #lastText1{
+        display: none
+    }
+
+    #middleText1{
+        font-size: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+/*.LeftAdDiv #adLeftImg .adLeftTextDiv*/
+/* @media screen and (max-width: 445px){ 
+    .LeftAdDiv{
+        width: 100vw;
+    }
+    #adLeftImg{
+        width: 100vw;
+    }
+    .adLeftTextDiv{
+        width: 100%;
+    }
+
+} */
+@media screen and (max-width: 350px){ 
+    .rightArrow{
+        display: none;
+    }
 }
